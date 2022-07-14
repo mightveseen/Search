@@ -2,4 +2,5 @@ rootProject.name = 'Search'
 include 'gate'
 include 'documentation'
 include 'utility'
+include 'audit'
 
