@@ -1,0 +1,13 @@
+<configuration>
+    <!-- LOG FILE NAME (IMPORTANT: SHOULD STAY BEFORE INCLUDE TAG) -->
+    <property name="LOG_NAME" value="gate-elastic"/>
+    <!-- ADD COMMON LOGBACK CONFIGURATION (APPENDER) -->
+    <include resource="logback-api.xml"/>
+    <!-- PERMISSIONS -->
+    <logger name="com.selfproject.valiantsin">
+        <appender-ref ref="ELASTIC"/>
+    </logger>
+    <root level="info">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>
